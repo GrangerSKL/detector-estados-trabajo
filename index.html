@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkVision AI</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>WorkVision AI</h1>
+
+        <p class="subtitle">
+            Sistema Inteligente de Detección de Estados de Trabajo
+        </p>
+
+        <div id="webcam-container"></div>
+
+        <div class="status-box">
+            <h2 id="prediction">Analizando...</h2>
+            <p id="confidence">Confianza: 0%</p>
+            <p id="latency">Inferencia: 0 ms</p>
+        </div>
+
+        <div id="bars-container"></div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
